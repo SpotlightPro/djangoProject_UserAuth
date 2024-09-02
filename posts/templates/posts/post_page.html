@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+   {{   post.title }}
+{% endblock %}
+
+{% block content %}
+    <h1>{{   post.title }}</h1>
+    <p>Here you are going to post your Post List</p>
+    <br />
+    <section>
+        <h1>{{ post.title }}</h1>       
+        <p>{{ post.date }}</p>
+        <p>{{ post.body }}</p>        
+    </section>
+
+    <p>Check out our <a href="/">Home</a> page and  <a href="/about">About</a>  pages Lazaros</p>
+{% endblock %}
+
